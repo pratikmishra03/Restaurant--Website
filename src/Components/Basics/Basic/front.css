@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background: ("../images/resturentMain.png");
+    
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  html {
+    background: #faf7f2;
+
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+  }
+  
+  
+  
+
+.navbar2{
+   background-color:white;
+   position: relative;
+    width: 100vw;
+    height: 70px;
+    
+}
+
+
+
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+}
+.ul{
+    display: flex;
+    text-align: center;    
+}
+.FrontLi{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* box-shadow: inset 0px 0px 0px -15px rebeccapurple; */
+    
+    
+   
+   
+}
+
+.ul li a{
+    text-decoration: none;
+    margin: 10px 10px;
+    margin-bottom:0px ;
+    padding:10px 7px;
+    padding-bottom: 0px;
+    font-size: 1.2em;
+    color: black;
+    transition: box-shadow 0.3s;
+   
+    
+}
+
+.ul li a:hover,
+.ul li a:focus {
+    color: rebeccapurple;
+    box-shadow: inset 0px -2px 0px -1px rebeccapurple;
+  
+}
+
+
+.ul li a img{
+    mix-blend-mode: multiply;
+    height: 3em;
+    width: 3em;
+    background-color: #ADCFFF;
+    box-sizing: border-box;
+}
+
+
+/* ------------Home---------- */
+
+.HomeCotainer{
+  background-size: cover;
+  background-image: url("C:\Users\prati\Desktop\Web Development\React\complete_react_in\my-app\public\images\resturentHome.jpg");
+  height: 100vh;
+  width: 100%;
+  position: ;
+  
+ 
+}
+
+.HomePage{
+  position:absolute;
+  width: 500px;
+  height: 420px;
+ 
+  top: 160px;
+  margin-left: 50px;
+  background-image: url("C:\Users\prati\Desktop\Web Development\React\complete_react_in\my-app\public\images\resturentMain.avif");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.HomeContent{
+    position: absolute;
+    color: #faf7f2;
+    width: 40rem;
+    height: 38rem;
+    background-attachment: fixed;
+    top: 160px;
+    margin-left: 50px;
+    left: 705px;
+    
+}
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    padding-bottom: 20px;
+
+}
+.headingContent{
+    margin: 30px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; 
+    padding-bottom: 20px;  
+}
+.TableButton{
+  width: 13em;
+  font-size: 15px;
+  appearance: none;
+  background-color: black;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.TableButton:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+/* .sliderContainer{
+  width: 500px; 
+  height: 2800px;
+  
+} */
+
