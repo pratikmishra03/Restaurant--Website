@@ -1,24 +1,4 @@
-const nav=[{
-  id:1,
-  name:"Home"
-},
-{
-  id:2,
-  name:"Our Menu"
-},
-{
-  id:3,
-  name:"Your orders"
-},
-{
-  id:4,
-  name:"Your Bookings"
-},
-{
-  id:5,
-  name:"Contact Us"
-},
-];
+
 
 const Menu = [
     {

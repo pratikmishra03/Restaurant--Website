@@ -1,61 +1,172 @@
-import React from 'react'
-import SimpleImageSlider from 'react-simple-image-slider'
-import './front.css'
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './front.css';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+// import SlideImg from './SlideImg';
+
+
+
+ 
 const Slides = () => {
-    const slideImg=[
-        {
-          url: "SlidesImg/6169319.jpg",
-            
-        },
-        {
-          url: "SlidesImg/7066943.jpg",
-            
-        },
-        {
-          url: "SlidesImg/7066884.jpg",
-            
-        },
-        {
-          url: "SlidesImg/7066844.jpg",
-            
-        },
-        {
-          url: "SlidesImg/7066826.jpg",
-            
-        },
-        {
-          url: "SlidesImg/7066812.jpg",
-            
-        },
-        {
-          url: "SlidesImg/7066809.jpg",
-            
-        },
+  const Imgs=[
+    {   
+      id:0, 
+        url: "SlidesImg/6169319.jpg",
+          
+      },
+      {  
+        id:1,
+        url: "SlidesImg/7066943.jpg",
+          
+      },
+      { id:2,
+        url: "SlidesImg/7066884.jpg",
+          
+      },
+      { 
+        id:3,
+        url: "SlidesImg/7066844.jpg",
+          
+      },
+      { 
+        id:4,
+        url: "SlidesImg/7066826.jpg",
+          
+      },
+      {
+        id:5,
+        url: "SlidesImg/7066812.jpg",
+         
+      },
+      { 
+        id:6,
+        url: "SlidesImg/7066809.jpg",
+          
+      },
+     
+     ]
 
-    ]
+
+
   return (
     <>
-    <div className="sliderContainer">
-      <SimpleImageSlider
-                  width={693.5}
-                  height={900}
-                  images={slideImg}
-                  showNavs={true}
-                  showBullets={true}
+   
+  
+    
+    <Swiper
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+      className="mySwiper">
+         {
+           Imgs.map((currElem)=>{
+            return(
+              <>
+             
+              <SwiperSlide className><img className='slid-img' src={currElem.url} alt="" /></SwiperSlide>
+
+              </>
+            )
+
+           }) 
+        }
+       </Swiper>
+       
+     
+        
+        )
+      {/* <SwiperSlide>`{$}`</SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide></SwiperSlide> */}
+   
+  </>
+  
+  )
+}
+
+export default Slides
+// import React from 'react'
+// import SimpleImageSlider from 'react-simple-image-slider'
+// import './front.css'
+
+// const Slides = () => {
+//     const slideImg=[
+//         {
+//           url: "SlidesImg/6169319.jpg",
+            
+//         },
+//         {
+//           url: "SlidesImg/7066943.jpg",
+            
+//         },
+//         {
+//           url: "SlidesImg/7066884.jpg",
+            
+//         },
+//         {
+//           url: "SlidesImg/7066844.jpg",
+            
+//         },
+//         {
+//           url: "SlidesImg/7066826.jpg",
+            
+//         },
+//         {
+//           url: "SlidesImg/7066812.jpg",
+            
+//         },
+//         {
+//           url: "SlidesImg/7066809.jpg",
+            
+//         },
+
+//     ]
+//   return (
+//     <>
+//     <div className="sliderContainer">
+//       <SimpleImageSlider
+//                   width={693.5}
+//                   height={900}
+//                   images={slideImg}
+//                   showNavs={true}
+//                   showBullets={true}
                 
-               />
+//                />
       
 
 
 
-        </div>
+//         </div>
 
    
     
-    </>
+//     </>
     
-  )
-}
+//   )
+// }
 
-export default Slides;
+// export default Slides;

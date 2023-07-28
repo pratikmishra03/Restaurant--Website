@@ -4,6 +4,7 @@ import './front.css'
 import Resturent from './Resturent';
 import Slides from './Slides';
 
+
 const Home = () => {
   return (
     <>
@@ -24,8 +25,8 @@ const Home = () => {
         </span>
     </div>
     </div>
-    <Slides/>
     </div>
+    <Slides/>
   
     </>
   )
