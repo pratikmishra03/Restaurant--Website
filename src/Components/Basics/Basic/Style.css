@@ -12,8 +12,9 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 1800;
   }
+
   
   *,
   *:before,
@@ -156,22 +157,31 @@
   }
   
   /* ---------- Button styles ------------------ */
-  
+ 
   .navbar {
+    display: flex;
     padding-top: 50px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   
   .navbar h1 {
     padding-bottom: 20px;
     text-transform: capitalize;
+    
+    
   }
   
   /** button group styles **/
   .btn-group {
     border-radius: 2rem;
     text-transform: capitalize;
+    
+  
   }
+ 
+  
   .btn-group__item {
     border: none;
     /* min-width: 6rem; */

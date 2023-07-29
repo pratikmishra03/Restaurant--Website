@@ -5,6 +5,7 @@
     font-family: "Lato", sans-serif;
     background: ("../images/resturentMain.png");
     
+    
   }
   *,
   *:before,
@@ -26,26 +27,33 @@
 
 .navbar2{
    background-color:white;
-   position: relative;
+    
     width: 100vw;
-    height: 70px;
+    
+   
     
 }
+
 
 
 
 .front{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     position: absolute;
     
-}
+} 
 .ul{
+    background-color: white;
+    width: 100%;
+   
     display: flex;
     text-align: center;    
 }
 .FrontLi{
+    background-color: white;
+   
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -54,7 +62,7 @@
     
    
    
-}
+ }
 
 .ul li a{
     text-decoration: none;
@@ -62,9 +70,12 @@
     margin-bottom:0px ;
     padding:10px 7px;
     padding-bottom: 0px;
-    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: 1000;
+    
     color: black;
     transition: box-shadow 0.3s;
+    ;
    
     
 }
@@ -84,21 +95,44 @@
     background-color: #ADCFFF;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .navbar2{
+    background-color:white;
+  
+     width: 100vw;
+     height: 250px;
+     
+ }
+  .ul{
+    background-color:black;
+    width: 100vw;
+   
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+  
+}
+
+}
 
 
 /* ------------Home---------- */
 
 .HomeCotainer{
-  background-size: cover;
+ 
   background-image: url("C:\Users\prati\Desktop\Web Development\React\complete_react_in\my-app\public\images\resturentHome.jpg");
+  background-size: cover;
   height: 100vh;
-  width: 100%;
-  position: ;
+  width: 100vw;
+  
+  
+
   
  
-}
-
-.HomePage{
+} 
+ .HomePage{
   position:absolute;
   width: 500px;
   height: 420px;
@@ -108,32 +142,67 @@
   background-image: url("C:\Users\prati\Desktop\Web Development\React\complete_react_in\my-app\public\images\resturentMain.avif");
   background-repeat: no-repeat;
   background-size: contain;
-}
-.HomeContent{
-    position: absolute;
-    color: #faf7f2;
-    width: 40rem;
-    height: 38rem;
+} 
+ .HomeContent{
+
+
+    color:white;
     background-attachment: fixed;
     top: 160px;
-    margin-left: 50px;
-    left: 705px;
+    width:50%;
+    height: 80%;
+    
+    padding-top: 20px; 
+
+   
     
 }
 .heading{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
+  padding-top: 20px;
     margin: 20px;
-    padding-bottom: 20px;
-
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    padding-left: 40px;
+  
 }
 .headingContent{
-    margin: 30px 20px;
+  
+    margin: 10px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    
     font-family: 'Playfair Display', serif;
-    font-size: 30px; 
-    padding-bottom: 20px;  
+    font-size: 30px;
+    width: 50;
+    box-sizing: border-box;
+  
+}
+@media (max-width: 768px) {
+  
+  .heading{
+    font-size: 25px;
+  }
+  .headingContent{
+    font-size: 20px;
+    width: 90%;
+    height: 70%;
+    position: relative;
+  }
+}
+
+ .btn{
+  margin: 30px;
+  padding: 10px;
+  margin-top: 5px;
+   
+} 
+.TableButton{
+
+ 
 }
 .TableButton{
+  
   width: 13em;
   font-size: 15px;
   appearance: none;
@@ -144,7 +213,7 @@
   box-sizing: border-box;
   color: white;
   cursor: pointer;
-  display: inline-block;
+  
   font-family: -apple-system,sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -172,34 +241,38 @@
 }
 
 @media (min-width: 768px) {
+  .button{
+    display: flex;
+  }
+ 
   .button-73 {
     font-size: 1.5rem;
     padding: .75rem 2rem;
   }
-}
+} 
 
 
-/* //------Slider------- */
-#app {
+ /* //------Slider-------  */
+ #app {
   height: 100%;
 }
-html,
+/* html,
 body {
-  position: relative;
+  position: absolute;
   height: 100%;
-}
+}  */
 
-body {
+/* body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  
   color: #000;
   margin: 0;
   padding: 0;
-}
+}  */
 
 .swiper {
-  width: 1100px;
+  width: 100vw;
   height: 650px;
   margin-top: 50px;
   
@@ -214,12 +287,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
 
 .swiper-slide img {
   
   width: 1100px;
   height: 650px;
   object-fit: cover;
-}
+} 
 

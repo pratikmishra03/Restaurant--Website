@@ -71,6 +71,7 @@ const [toggleButton,setToggleButton]=useState(false)
         return curElem.id!==index;
 
     })
+    
     setItems(updatedItems)
    }
    //Remove all

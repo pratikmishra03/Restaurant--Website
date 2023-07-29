@@ -11,7 +11,7 @@ import { Route, Routes } from "react-router-dom";
 
 // import UseEffect from "./Components/Hooks/UseEffect";
 // import UseReducer from "./Components/Hooks/UseReducer";
-// import ToDo from "./Components/ToDo React/ToDo";
+import ToDo from "./Components/ToDo React/ToDo";
 
 
 
@@ -28,18 +28,15 @@ const App = () => {
   return (
     
     <>
-    <Front/>
-    
-  
-
-     <Routes>
+    <Front/>  
+    <Routes>
       <Route path="/home" element={<Home/>}/>
       <Route path="/resturent" element={ <Resturent/>}/>
       <Route path="/orders" element={ <Orders/>}/>
       <Route path="/contact" element={ <Contact/>}/>
-
-      
      </Routes>
+
+   
 
 
 
